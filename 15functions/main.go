@@ -18,9 +18,16 @@ func proAdder(values ...int) int {
 	return total
 }
 
+func multipleReturnValues(valOne int, valTwo int) (int, int) {
+	return valOne, valTwo
+}
+
 func main() {
 	fmt.Println("Functions in Golang")
 	printCustom()
 	fmt.Printf("Sum of %v and %v is %v\n", 2, 3, adder(2, 3))
 	fmt.Printf("%v\n", proAdder(2, 4, 34, 123))
+	valOne, valTwo := multipleReturnValues(1, 2)
+	fmt.Println("valOne", valOne)
+	fmt.Println("valTwo", valTwo)
 }
