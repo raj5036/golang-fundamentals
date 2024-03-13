@@ -2,6 +2,12 @@ package main
 
 import "fmt"
 
+/*
+	Basic types: bool, int, float64, complex128, string
+	Aggregate types: array, slice, struct
+	Reference types: pointer, channel, map, interface
+*/
+
 func main() {
 	var username string = "EngineerDecodes"
 	fmt.Println(username)
